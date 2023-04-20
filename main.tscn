@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://knqc1trtw28v"]
+
+[ext_resource type="Script" path="res://Main.gd" id="1_f8bn4"]
+[ext_resource type="Script" path="res://Camera3D.gd" id="4_4naom"]
+
+[node name="Main" type="Node3D"]
+script = ExtResource("1_f8bn4")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 30)
+current = true
+script = ExtResource("4_4naom")

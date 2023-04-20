@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7bniofyqimbn"]
+
+[ext_resource type="Texture2D" uid="uid://djqawsya8qgdb" path="res://icon.svg" id="2_7icq5"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_v3epc"]
+radius = 0.796389
+
+[node name="Projectile" type="RigidBody3D"]
+linear_damp_mode = 1
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_v3epc")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+modulate = Color(0, 0, 0, 1)
+texture = ExtResource("2_7icq5")
